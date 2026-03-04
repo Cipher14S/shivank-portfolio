@@ -4,22 +4,37 @@ import profileImg from "/sk.png";
 import bgImg from "/bg.jpg";
 
 export default function Hero() {
-  const fullText = "Hi, I'm Shivank Kumar";
-  const [text, setText] = useState("");
+
+  const prefix = "Hi, I'm ";
+  const name = "Shivank Kumar";
+
+  const [typedPrefix, setTypedPrefix] = useState("");
+  const [typedName, setTypedName] = useState("");
 
   useEffect(() => {
-    let index = 0;
+    let i = 0;
 
-    const interval = setInterval(() => {
-      setText(fullText.slice(0, index + 1));
-      index++;
+    const typePrefix = setInterval(() => {
+      setTypedPrefix(prefix.slice(0, i + 1));
+      i++;
 
-      if (index === fullText.length) {
-        clearInterval(interval);
+      if (i === prefix.length) {
+        clearInterval(typePrefix);
+
+        let j = 0;
+
+        const typeName = setInterval(() => {
+          setTypedName(name.slice(0, j + 1));
+          j++;
+
+          if (j === name.length) clearInterval(typeName);
+        }, 80);
+
       }
+
     }, 80);
 
-    return () => clearInterval(interval);
+    return () => clearInterval(typePrefix);
   }, []);
 
   return (
@@ -28,23 +43,27 @@ export default function Hero() {
       className="hero"
       style={{ backgroundImage: `url(${bgImg})` }}
     >
+
       <div className="hero-overlay"></div>
 
       <div className="hero-content">
+
         <img src={profileImg} alt="Shivank" className="hero-image" />
 
         <h1>
-          {text}
+          {typedPrefix}
+          <span className="hero-name">{typedName}</span>
           <span className="cursor">|</span>
         </h1>
 
-        <p className="hero-sub"> 
-          Computer Science Undergraduate | Software Engineering | Algorithms & Scalable Systems
+        <p className="hero-sub">
+          Computer Science Undergraduate • Software Engineering • Algorithms & Scalable Systems
         </p>
 
         <a href="#about" className="about-btn">
           About Me ↓
         </a>
+
       </div>
     </section>
   );

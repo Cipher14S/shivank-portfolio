@@ -19,6 +19,24 @@
   overflow: hidden;
 }
 
+.hero-name {
+  background: linear-gradient(90deg,#5a7a7d,#ff00c8);
+  background-size: 200%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientShift 4s linear infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0%; }
+  100% { background-position: 200%; }
+}
+
 /* Dark Overlay (keep ONLY one overlay method) */
 .hero::before {
   content: "";
