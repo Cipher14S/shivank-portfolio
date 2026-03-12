@@ -73,14 +73,14 @@
 }
 
 .coding-links a {
-  color: #5a4bff;
+  color: #00bfff;
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s ease;
 }
 
 .coding-links a:hover {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 /* ================= SOCIAL ICONS ================= */
@@ -92,12 +92,12 @@
 }
 
 .social-icons a {
-  color: #5a4bff;
+  color: #00bfff;
   transition: 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 /* ================= BOTTOM GRID ================= */
@@ -146,14 +146,14 @@
 
 .message-form input:focus,
 .message-form textarea:focus {
-  border-color: #5a4bff;
+  border-color: #0aa0c5;
 }
 
 .message-form button {
   padding: 14px;
   border-radius: 8px;
   border: none;
-  background: linear-gradient(90deg, #5a4bff, #7b5bff);
+  background: linear-gradient(90deg, #05acff, #00b3ea);
   color: white;
   font-weight: 500;
   cursor: pointer;
