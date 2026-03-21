@@ -15,7 +15,7 @@ const workData = [
     company: "Data Systems Inc.",
     role: "Backend Developer Intern",
     duration: "Jan 2025 – Apr 2025",
-    logo: "/company2.png",
+    logo: "/company2.jpg",
     points: [
       "Built RESTful backend APIs supporting scalable data processing workflows.",
       "Improved database query efficiency leading to faster response times.",
@@ -35,7 +35,7 @@ const workData = [
     company: "Algorithmic Research Lab",
     role: "Research Assistant",
     duration: "Jan 2024 – May 2024",
-    logo: "/company4.png",
+    logo: "/company4.jpg",
     points: [
       "Worked on algorithm optimization and computational efficiency experiments.",
       "Developed scripts for data analysis and performance benchmarking.",
