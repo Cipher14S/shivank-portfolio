@@ -5,7 +5,7 @@ const projectsData = [
     title: "Algorithm Visualizer",
     description:
       "An interactive web application to visualize sorting algorithms with real-time animations and step-by-step execution. Built to strengthen algorithmic intuition and provide an educational experience.",
-    image: "/project1.png",
+    image: "/project1.jpg",
     live: "#",
     source: "#",
   },
@@ -13,7 +13,7 @@ const projectsData = [
     title: "Scalable Backend API",
     description:
       "Designed and implemented a RESTful backend service with authentication, database modeling, and optimized query performance for production-level scalability.",
-    image: "/project2.png",
+    image: "/project1.jpg",
     live: "#",
     source: "#",
   },
@@ -21,7 +21,7 @@ const projectsData = [
     title: "Quantitative Analysis Tool",
     description:
       "A data-driven analytics dashboard built to explore financial datasets and simulate trading strategies using statistical modeling.",
-    image: "/project3.png",
+    image: "/project1.jpg",
     live: "#",
     source: "#",
   },

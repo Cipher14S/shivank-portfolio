@@ -31,6 +31,7 @@ export default function Navbar() {
 
       <div className="nav-links">
         <a href="#about">About Me</a>
+        <Link to="/skills">Skills</Link>
         <Link to="/blog">Work</Link>
         <Link to="/projects">Projects</Link>
         <Link to="/contact">Contact</Link>
