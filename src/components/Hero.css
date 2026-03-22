@@ -24,7 +24,7 @@
 }
 
 /* ================= BACKGROUND INSIDE BOX ================= */
-
+/* WITH IMAGE AS BG */
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -35,6 +35,24 @@
 
   filter: brightness(0.6); /* darker */
 }
+
+/* WITHOUT IMAGE AS BG */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(360deg, #00e5ff, #0f0f1a, #00e5ff);
+  background-size: 400% 400%;
+
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 /* ================= CONTENT ================= */
 
