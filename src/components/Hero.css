@@ -1,26 +1,66 @@
-/* ================= HERO SECTION ================= */
+/* ================= OUTER ================= */
 
 .hero {
-  width: 100%;
-  min-height: 100vh;
-  padding-top: 60px; /* same as navbar height */
+  padding: 120px 20px;
+  background: #e5e5e5;
 
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+}
+
+/* ================= DARK BOX ================= */
+
+.hero-wrapper {
+  position: relative;
+
+  width: 100%;
+  max-width: 1400px;
+
+  padding: 60px 80px;    /* smaller */
+
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* ================= BACKGROUND INSIDE BOX ================= */
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
 
   background-image: url('/bg.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 
-  position: relative;
-  overflow: hidden;
+  filter: brightness(0.6); /* darker */
 }
 
+/* ================= CONTENT ================= */
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  text-align: center;
+  padding: 100px 40px;
+  color: white;
+}
+
+/* ================= IMAGE ================= */
+
+.hero-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgb(255, 255, 255);
+  margin-bottom: 40px;
+}
+
+/* ================= NAME GRADIENT ================= */
+
 .hero-name {
-  background: linear-gradient(30deg,#60c414,#e7f703);
+  background: linear-gradient(30deg, #60c414, #e7f703);
   background-size: 200%;
 
   -webkit-background-clip: text;
@@ -37,42 +77,29 @@
   100% { background-position: 200%; }
 }
 
-/* Dark Overlay (keep ONLY one overlay method) */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(136, 136, 136, 0.6);
-}
+/* ================= SUBTEXT ================= */
 
-/* Content above overlay */
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 900px;
-  padding: 0 20px;
-}
-
-/* Profile Image */
-.hero-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid rgb(255, 255, 255);
-  margin-bottom: 40px;
-}
-
-/* Subtitle Fade */
 .hero-sub {
-  opacity: 50;
-  color: whitesmoke;
-  animation: fadeIn 1.5s ease forwards;
-  animation-delay: 1.5s;
+  margin-top: 20px;
+  color: #ddd;
 }
 
-/* Responsive */
+/* ================= BUTTON ================= */
+
+.about-btn {
+  display: inline-block;
+  margin-top: 30px;
+  color: #00e5ff;
+  text-decoration: none;
+}
+
+/* ================= RESPONSIVE ================= */
+
 @media (max-width: 768px) {
+  .hero-content {
+    padding: 60px 20px;
+  }
+
   .hero h1 {
     font-size: 2rem;
   }

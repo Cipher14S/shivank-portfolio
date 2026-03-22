@@ -38,33 +38,34 @@ export default function Hero() {
   }, []);
 
   return (
-    <section
-      id="home"
-      className="hero"
-      style={{ backgroundImage: `url(${bgImg})` }}
-    >
+    <section id="home" className="hero">
 
-      <div className="hero-overlay"></div>
+  <div className="hero-wrapper">
 
-      <div className="hero-content">
+    <div className="hero-bg"></div> {/* background inside box */}
 
-        <img src={profileImg} alt="Shivank" className="hero-image" />
+    <div className="hero-content">
 
-        <h1>
-          {typedPrefix}
-          <span className="hero-name">{typedName}</span>
-          <span className="cursor">|</span>
-        </h1>
+      <img src={profileImg} alt="Shivank" className="hero-image" />
 
-        <p className="hero-sub">
-          Computer Science Undergraduate • Software Engineering • Algorithms & Scalable Systems
-        </p>
+      <h1>
+        {typedPrefix}
+        <span className="hero-name">{typedName}</span>
+        <span className="cursor">|</span>
+      </h1>
 
-        <a href="#about" className="about-btn">
-          About Me ↓
-        </a>
+      <p className="hero-sub">
+        Computer Science Undergraduate • Software Engineering • Algorithms & Scalable Systems
+      </p>
 
-      </div>
-    </section>
+      <a href="#about" className="about-btn">
+        About Me ↓
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
   );
 }
